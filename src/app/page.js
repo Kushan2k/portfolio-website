@@ -1,13 +1,15 @@
 "use client"
-
-import { Alert } from "flowbite-react"
+import { About, Hero } from "@/components"
+import { NavbarDefault } from "@/components"
+import { useRef, useState } from "react"
 
 export default function Home() {
+  const [isOpen, setOpen] = useState(false)
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Alert color={"failure"} title="hello world">
-        hello world
-      </Alert>
+    <main className="min-h-screen overflow-hidden ">
+      <NavbarDefault isOpen={isOpen} setOpen={setOpen} />
+      <Hero />
+      <About />
     </main>
   )
 }

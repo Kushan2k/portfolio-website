@@ -12,14 +12,14 @@ function NavbarDefault({isOpen,setOpen,ref}) {
     setOpen(!isOpen)
   }
   return (
-    <div ref={ref} className="navbar h-16 flex items-center justify-end w-rounded-r-full ">
+    <div ref={ref} className="navbar h-16 flex items-center justify-end w-rounded-r-full pb-5 md:pb-0">
       <ul className='hidden justify-between items-center w-2/5 md:flex '>
         <li>Main</li>
         <li>Home</li>
         <li>Home</li>
         <li className='mr-5'>Home</li>
       </ul>
-      <button onClick={changeopne} className='mt-5 mr-3 md:hidden  rounded-full bg-gradient-to-tr from-blue-300 to-blue-800 p-2 transition-all hover:scale-110'>
+      <button onClick={changeopne} className='mt-5 mr-3 md:hidden  rounded-full bg-gradient-to-tr from-blue-700 to-blue-900 p-2 transition-all hover:scale-110'>
 
         {
           isOpen ? <HiRefresh className='transition-opacity' size={35} color='white'/>:<HiMenuAlt3 className='transition-opacity' size={35} color='white' />
@@ -30,7 +30,7 @@ function NavbarDefault({isOpen,setOpen,ref}) {
 
       {
         isOpen ? (
-          <motion.div className="pop-up-nav absolute bottom-0 left-0 right-0 mx-auto  w-[90%] rounded-tr-lg rounded-tl-lg bg-blue z-50 border-2 border-red-600 flex items-center h-[40vh] md:hidden"
+          <motion.div className="pop-up-nav absolute bottom-0 left-0 right-0 mx-auto  w-[90%] rounded-tr-lg rounded-tl-lg bg-blue z-50  flex items-center h-[40vh] md:hidden bg-white"
       
         variants={{
           start: {
