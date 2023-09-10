@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 
-async function Handler(req,res) {
+async function Handler(req) {
   
-  console.log(res)
+  return NextResponse.json({msg:"recived"})
 }
 
 export {Handler as GET}
