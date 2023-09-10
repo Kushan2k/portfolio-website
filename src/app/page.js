@@ -1,7 +1,7 @@
 "use client"
-import { About, Hero } from "@/components"
+import { About, Hero, NumberFacts } from "@/components"
 import { NavbarDefault } from "@/components"
-import { useRef, useState } from "react"
+import { useState } from "react"
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false)
@@ -10,6 +10,7 @@ export default function Home() {
       <NavbarDefault isOpen={isOpen} setOpen={setOpen} />
       <Hero />
       <About />
+      <NumberFacts />
     </main>
   )
 }

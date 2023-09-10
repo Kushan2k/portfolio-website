@@ -1,13 +1,13 @@
 
 import Image from 'next/image'
 import {FiChevronRight} from 'react-icons/fi'
-import AnimationWrapper from ".."
+import AnimationWrapper, { Heading } from ".."
 
 
 export default function About() {
 
   return (
-    <div className="p-4 m-4 bg-white md:w-3/4 mx-auto flex flex-col">
+    <div className="p-4 m-4 bg-white md:w-3/4 mx-auto flex flex-col overflow-hidden">
       
 
       <AnimationWrapper
@@ -27,11 +27,8 @@ export default function About() {
           
         }}
       >
-        <h2 className="text-left text-5xl font-extrabold font-mono pb-4 text-transparent bg-clip-text bg-gradient-to-tr from-black  to-gray-100">
-          About
-          
-        </h2>
-        <p>
+        <Heading title={'About'}/>
+        <p className='md:mb-[100px]'>
           Hello there! I am Kushan, a passionate Developer with a love for full stack development. I believe
           in the power of continous to drive meaningful
           change. Through my journey, I have honed my skills in full stack development, and I am dedicated to fulfill
@@ -42,7 +39,7 @@ export default function About() {
       </AnimationWrapper>
 
       
-      <div className="p-4 grid grid-cols-1 items-center justify-center md:grid-cols-2">
+      <div className="p-4 grid grid-cols-1 items-center justify-center lg:grid-cols-2">
         <AnimationWrapper
         from={{
             scale: 0,
