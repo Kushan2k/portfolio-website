@@ -1,13 +1,15 @@
 
 import Image from "next/image"
+import {FaLinkedin,FaGithub} from 'react-icons/fa6'
+import {FaWhatsapp,FaFacebook} from 'react-icons/fa'
 
 
 
 
 function Hero() {
   return (
-    <div className="hero w-full h-[90vh] grid grid-cols-1 md:grid-cols-2 items-center justify-center md:justify-center   p-5 ">
-      <div className="img flex items-center justify-center w-1/2 mx-auto h-auto ">
+    <div className="hero w-full md:w-3/4 h-[90vh] grid grid-cols-1 md:grid-cols-2 items-center justify-center md:justify-center   p-5 ">
+      <div className="img flex items-center flex-col gap-y-8 justify-center w-1/2 mx-auto h-auto ">
         <Image src={
           'https://previews.123rf.com/images/apoev/apoev2107/apoev210700033/171405527-default-avatar-photo-placeholder-gray-profile-picture-icon-business-man-illustration.jpg'
         }
@@ -21,6 +23,20 @@ function Hero() {
           className="rounded-full md:w-full border-2 border-blue-700"
           
         />
+        <div className="social w-3/4 mx-auto flex items-center justify-around">
+          <a href="https://www.linkedin.com/in/kushan-gayantha-b2069b1a8/" target="_blank">
+            <FaLinkedin size={30} color="#0e76a8"/>
+          </a>
+          <a href="https://github.com/Kushan2k" target="_blank">
+            <FaGithub size={30} color='#171515' />
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=+94712720033" target="_blank">
+            <FaWhatsapp size={30} color="#25D366" />
+          </a>
+          <a href="https://web.facebook.com/profile.php?id=61550551324628" target="_blank">
+            <FaFacebook size={30} color="#3b5998" />
+          </a>
+        </div>
 
       </div>
 

@@ -30,7 +30,7 @@ function NavbarDefault({isOpen,setOpen,ref}) {
 
       {
         isOpen ? (
-          <motion.div className="pop-up-nav absolute bottom-0 left-0 right-0 mx-auto  w-[90%] rounded-tr-lg rounded-tl-lg bg-blue z-50  flex items-center h-[40vh] md:hidden bg-white"
+          <motion.div className="pop-up-nav fixed bottom-0 left-0 right-0 mx-auto  w-[90%] rounded-tr-lg rounded-tl-lg bg-blue z-50  flex items-center h-[40vh] md:hidden bg-white"
       
         variants={{
           start: {
