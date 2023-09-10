@@ -1,77 +1,32 @@
-import { motion,useAnimation, useInView } from "framer-motion"
-import { useEffect, useRef } from "react"
+
 import Image from 'next/image'
 import {FiChevronRight} from 'react-icons/fi'
+import AnimationWrapper from ".."
 
 
 export default function About() {
 
-  const ref = useRef(null)
-  const stackref=useRef(null)
-  const imgREf = useRef(null)
-  const imgInView = useInView(imgREf, { amount: 'some', once: false })
-  const stackinView=useInView(stackref,{once:false,amount:'some'})
-  const imgControls=useAnimation()
-  const inview = useInView(ref, { amount: 'some',once:false })
-  const controls = useAnimation()
-  const stackControls=useAnimation()
-  
-  useEffect(() => {
-    if (inview) {
-      
-      controls.start('to')
-    } else {
-      controls.set('from')
-    }
-  }, [inview])
-  
-  useEffect(() => {
-    
-    if (imgInView) {
-      
-      
-      imgControls.start('to')
-    } else {
-      imgControls.set('from')
-    }
-  }, [imgInView])
-  
-  useEffect(() => {
-    
-    if (stackinView) {
-      
-      
-      stackControls.start('to')
-    } else {
-      stackControls.set('from')
-    }
-  },[stackinView])
-  
   return (
-    <div className="p-4 m-4 bg-white md:w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2">
-      <motion.div
-        
-        variants={{
-          from: {
-            x: -300,
-            opacity:0,
-          },
-          to: {
+    <div className="p-4 m-4 bg-white md:w-3/4 mx-auto flex flex-col">
+      
+
+      <AnimationWrapper
+        from={{
+        x: -300,
+        opacity: 0,
+        }}
+        to={
+           {
             x: 0,
             opacity:1,
           }
-        }}
-
-        initial='from'
-        animate={controls}
-
+         }
         transition={{
           bounce: true,
           duration:0.7
           
         }}
-        
-        className="about " ref={ref}>
+      >
         <h2 className="text-left text-5xl font-extrabold font-mono pb-4 text-transparent bg-clip-text bg-gradient-to-tr from-black  to-gray-100">
           About
           
@@ -82,21 +37,22 @@ export default function About() {
           change. Through my journey, I have honed my skills in full stack development, and I am dedicated to fulfill
           Your Goal.
         </p>
-      </motion.div>
+
+
+      </AnimationWrapper>
+
       
-      <motion.div
-        ref={imgREf}
-        variants={{
-          from: {
+      <div className="p-4 grid grid-cols-1 items-center justify-center md:grid-cols-2">
+        <AnimationWrapper
+        from={{
             scale: 0,
             opacity:0,
-          },
-          to: {
+      }}
+        to={{
             scale: 1,
             opacity:1
-          }
         }}
-        initial='from'
+        
         transition={{
           bounce: true,
           duration: 0.5,
@@ -104,13 +60,9 @@ export default function About() {
           
         }}
         
-      animate={imgControls}
       
-      className="p-4"
-
+        >
         
-      >
-
         <Image
 
           src={'https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg'}
@@ -118,37 +70,29 @@ export default function About() {
           width={200}
           height={200}
           loading="lazy"
-          className="rounded-md w-3/4 md:w-full mb-6 mx-auto"
+          className="rounded-md w-3/4 md:w-3/4 mb-6 mx-auto mt-3"
 
           alt='me'
               
-      />
-      
-      
-      </motion.div>
-
-      <motion.div
+            />
+            
         
-        ref={stackref}
-        variants={{
-          from: {
+      </AnimationWrapper>
+      <AnimationWrapper
+        from={{
             x: -300,
             opacity:0,
-          },
-          to: {
+        }}
+        to={{
             x: 0,
             opacity:1,
-          }
         }}
-
-        initial='from'
-        animate={stackControls}
-
         transition={{
           bounce: true,
           duration:0.7
           
         }}
+        
       >
         <h4 className="text-2xl font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-t from-blue-900 to-blue-300">Full-Stack Developer</h4>
         <p>
@@ -199,8 +143,8 @@ export default function About() {
           </li>
           
         </ul>
-
-      </motion.div>
+      </AnimationWrapper>
+      </div>
 
     </div>
   )
