@@ -8,7 +8,7 @@ import {FaWhatsapp,FaFacebook} from 'react-icons/fa'
 
 function Hero() {
   return (
-    <div className="hero w-full md:w-3/4 h-[90vh] grid grid-cols-1 md:grid-cols-2 items-center justify-center md:justify-center   p-5 ">
+    <div className="hero w-[95%] md:w-[90%] h-[90vh] grid grid-cols-1 md:grid-cols-2 items-center justify-center md:justify-center mx-auto  p-5 ">
       <div className="img flex items-center flex-col gap-y-8 justify-center w-1/2 mx-auto h-auto ">
         <Image src={
           'https://previews.123rf.com/images/apoev/apoev2107/apoev210700033/171405527-default-avatar-photo-placeholder-gray-profile-picture-icon-business-man-illustration.jpg'
@@ -40,13 +40,13 @@ function Hero() {
 
       </div>
 
-      <div className="info border w-4/5 flex items-center flex-col justify-center mx-auto text-right   md:mx-0">
+      <div className="info  w-4/5 flex items-center flex-col justify-center mx-auto text-right  md:mx-0">
 
-        <h2 className="text-4xl font-mono font-semibold  capitalize">
+        <h2 className="text-[2.5em] font-mono font-extrabold  capitalize text-transparent bg-clip-text bg-gradient-to-tr from-blue-900 via-blue-500 to-blue-900">
           kushan gayantha
           
         </h2>
-        <p className="text-right">Full Stack Developer</p>
+        <p className="text-right font-semibold">Full Stack Developer</p>
         
         <a className=" mt-3 rounded-full p-3  bg-gradient-to-tr from-blue-600 to-blue-900  text-white hover:from-blue-900 hover:to-blue-600  transition-transform hover:scale-105 cursor-pointer">
           Download CV

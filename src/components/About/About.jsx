@@ -7,7 +7,7 @@ import AnimationWrapper, { Heading } from ".."
 export default function About() {
 
   return (
-    <div className="p-4 m-4 bg-white md:w-3/4 mx-auto flex flex-col overflow-hidden">
+    <div id='about' className="w-[95%] p-4 m-4 bg-white md:w-[90%] mx-auto flex flex-col overflow-hidden">
       
 
       <AnimationWrapper

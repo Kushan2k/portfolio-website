@@ -1,10 +1,9 @@
 'use client'
-
-import { useState } from 'react'
 import { HiMenuAlt3, HiRefresh } from 'react-icons/hi'
 import { motion } from 'framer-motion' 
+import { Navbar} from 'flowbite-react'
 
-function NavbarDefault({isOpen,setOpen,ref}) {
+function NavbarDefault({isOpen,setOpen,ref,activeLink}) {
 
   
   
@@ -12,13 +11,46 @@ function NavbarDefault({isOpen,setOpen,ref}) {
     setOpen(!isOpen)
   }
   return (
-    <div ref={ref} className="navbar h-16 flex items-center justify-end w-rounded-r-full pb-5 md:pb-0">
-      <ul className='hidden justify-between items-center w-2/5 md:flex '>
-        <li>Main</li>
-        <li>Home</li>
-        <li>Home</li>
-        <li className='mr-5'>Home</li>
-      </ul>
+    <div ref={ref} className="navbar h-16 flex md:flex-col items-center justify-end w-rounded-r-full pb-5 md:pb-0">
+      
+      <Navbar fluid className='w-full fixed h-16 hidden bg-gray-100 md:flex md:justify-between md:items-center ' >
+        
+        
+        <Navbar.Collapse >
+          <Navbar.Link
+            // active={activeLink=='home'?true:false}
+            href="#"
+            className={activeLink=='home'?'text-blue-700 scale-110 text-xl':'text-xl'}
+            
+          >
+            <p>
+              Home
+            </p>
+          </Navbar.Link>
+          <Navbar.Link href="#about" className={activeLink=='about'?'text-blue-700 scale-110 text-xl':'text-xl'}  >
+            About
+          </Navbar.Link>
+          <Navbar.Link href="#" className={activeLink=='info'?'text-blue-700 scale-110 text-xl':'text-xl'}>
+            Details
+          </Navbar.Link>
+          <Navbar.Link href="#" className={activeLink=='skills'?'text-blue-700 scale-110 text-xl':'text-xl'}>
+            Stack
+          </Navbar.Link>
+          <Navbar.Link href="#" className={activeLink=='sportfolio'?'text-blue-700 scale-110 text-xl':'text-xl'}>
+            Portfolio
+          </Navbar.Link>
+          <Navbar.Link href="#" className={activeLink=='services'?'text-blue-700 scale-110 text-xl':'text-xl'}>
+            Services
+          </Navbar.Link>
+          <Navbar.Link href="#" className={activeLink=='contacts'?'text-blue-700 scale-110 text-xl':'text-xl'}>
+            Contacts
+          </Navbar.Link>
+        </Navbar.Collapse>
+        
+      </Navbar>
+
+      <div className="hidden fixed w-3/4 border-b-2 border-blue-700  md:block"></div>
+      
       <button onClick={changeopne} className='mt-5 mr-3 md:hidden  rounded-full bg-gradient-to-tr from-blue-700 to-blue-900 p-2 transition-all hover:scale-110'>
 
         {

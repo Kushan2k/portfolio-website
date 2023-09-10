@@ -1,12 +1,16 @@
 import CountUp from "react-countup";
 import AnimationWrapper, { Heading } from "..";
 import { FiSmile, FiCheckCircle } from 'react-icons/fi'
-import {Card} from 'flowbite-react'
+import { Card } from 'flowbite-react'
+
 
 
 export default function NumberFacts() {
+
+  
+  
   return (
-    <div className="m-4 p-4 bg-white w-full mx-auto md:w-3/4">
+    <div className="m-4 p-4 bg-white w-[95%] mx-auto md:w-[90%]">
 
       <Heading title={'Info'} />
       <div
