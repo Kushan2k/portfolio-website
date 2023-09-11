@@ -3,13 +3,24 @@ import Image from "next/image"
 import {FaLinkedin,FaGithub} from 'react-icons/fa6'
 import { FaWhatsapp, FaFacebook } from 'react-icons/fa'
 import me from '../../../public/images/me.jpg'
+import { useInView } from "framer-motion"
+import { useEffect, useRef } from "react"
 
 //placeholder url
 // 'https://previews.123rf.com/images/apoev/apoev2107/apoev210700033/171405527-default-avatar-photo-placeholder-gray-profile-picture-icon-business-man-illustration.jpg'
 
-function Hero() {
+function Hero({ onchange }) {
+  const ref=useRef(null)
+  const ishomeVis = useInView(ref, { once: false, amount: 'all' })
+  useEffect(() => {
+    if (ishomeVis) {
+      onchange('home')
+    }
+    
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[ishomeVis])
   return (
-    <div id="home"  className="hero w-[95%] md:w-[90%] h-[90vh] grid grid-cols-1 md:grid-cols-2 items-center justify-center md:justify-center mx-auto  p-5 ">
+    <div id="home" ref={ref}  className="hero w-[95%] md:w-[90%] h-[90vh] grid grid-cols-1 md:grid-cols-2 items-center justify-center md:justify-center mx-auto  p-5 ">
       <div className="img flex items-center flex-col gap-y-8 justify-center w-1/2 mx-auto h-auto ">
         <Image src={
           me

@@ -40,19 +40,14 @@ function NavbarDefault({isOpen,setOpen,ref,activeLink}) {
             className={activeLink=='home'?'text-blue-700 scale-110 text-xl':'text-xl'}
             
           >
-            <p>
+            
               Home
-            </p>
+            
           </Navbar.Link>
           <Navbar.Link href="#about" className={activeLink=='about'?'text-blue-700 scale-110 text-xl':'text-xl'}  >
             About
           </Navbar.Link>
-          <Navbar.Link href="#stats" className={activeLink=='stats'?'text-blue-700 scale-110 text-xl':'text-xl'}>
-            Stats
-          </Navbar.Link>
-          <Navbar.Link href="#stack" className={activeLink=='stack'?'text-blue-700 scale-110 text-xl':'text-xl'}>
-            Stack
-          </Navbar.Link>
+          
           <Navbar.Link href="#" className={activeLink=='portfolio'?'text-blue-700 scale-110 text-xl':'text-xl'}>
             Portfolio
           </Navbar.Link>
@@ -110,12 +105,7 @@ function NavbarDefault({isOpen,setOpen,ref,activeLink}) {
           <li className={activeLink=='about'?'active-link':''}>
             <Link href={'#about'}>About</Link>
           </li>
-          <li className={activeLink=='stats'?'active-link':''}>
-            <Link href={'#stats'}>Stats</Link>
-          </li>
-          <li className={activeLink=='stack'?'active-link':''}>
-            <Link href={'#stack'}>Stack</Link>
-          </li>
+          
           <li className={activeLink=='sportfolio'?'active-link':''}>
             <Link href={'#sportfolio'}>Portfolio</Link>
           </li>

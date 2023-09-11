@@ -1,29 +1,62 @@
 import ProgressBar from "@ramonak/react-progress-bar";
 import AnimationWrapper, { Heading } from "..";
 
+import java from '../../../public/images/icons/java.png'
+import css from '../../../public/images/icons/css3.png'
+import html from '../../../public/images/icons/html.png'
+import kotlin from '../../../public/images/icons/kotlin.png'
+import c3 from '../../../public/images/icons/c#.png'
+import dj from '../../../public/images/icons/djngo.png'
+import dart from '../../../public/images/icons/dart.png'
+import git from '../../../public/images/icons/git.png'
+import github from '../../../public/images/icons/github.png'
+import next from '../../../public/images/icons/next.png'
+import mysql from '../../../public/images/icons/mysql.png'
+import react from '../../../public/images/icons/react.png'
+import reactn from '../../../public/images/icons/react (1).png'
+import ts from '../../../public/images/icons/typescript.png'
+import Image from "next/image";
+import py from '../../../public/images/icons/python.png'
+import eth from '../../../public/images/icons/eth.png'
+import ex from '../../../public/images/icons/express.png'
+import cp from '../../../public/images/icons/cp.png'
+import flutter from '../../../public/images/icons/pngwing.com (6).png'
+import js from '../../../public/images/icons/js.png'
+import php from '../../../public/images/icons/php.png'
+import flask from '../../../public/images/icons/flask.png'
+import solidity from '../../../public/images/icons/solidity.png'
+import hh from '../../../public/images/icons/hardhat.png'
+
+
+
 
 const stacks = [
   {
+    id:1,
     name: 'HTML',
     level: '95%',
     delay:0.2,
   },
   {
+    id:2,
     name: 'Python',
     level: '85%',
     delay:0.3,
   },
   {
+    id:3,
     name: 'CSS',
     level: '90%',
     delay:0.4,
   },
   {
+    id:4,
     name: 'Java',
     level: '80%',
     delay:0.5,
   },
   {
+    id:5,
     name: 'Javascript',
     level: '90%',
     delay:0.6,
@@ -31,6 +64,8 @@ const stacks = [
 ]
 
 export default function TechStack() {
+  
+
   return (
     <div id="stack" className="m-4 p-4 bg-white w-[95%] mx-auto md:w-[90%]">
       <Heading title={'My Stack'} />
@@ -86,8 +121,31 @@ export default function TechStack() {
 
       <div>
         <h2 className="font-semibold text-2xl">Additionals</h2>
-        <div className="m-4 p-2 w-full flex mx-auto items-center justify-start border rounded-lg">
-          
+        <div className="gap-3 justify-center flex-wrap m-4 p-2 w-full flex mx-auto items-center md:justify-start border rounded-lg">
+          <Image src={html} width={50} height={50} alt="html"/>
+          <Image src={js} width={50} height={50} alt="js"/>
+          <Image src={php} width={50} height={50} alt="js"/>
+          <Image src={java} width={50} height={50} alt="java"/>
+          <Image src={py} width={50} height={50} alt="python"/>
+          <Image src={dart} width={50} height={50} alt="dart"/>
+          <Image src={flutter} width={50} height={50} alt="fl"/>
+          <Image src={ts} width={50} height={50} alt="ts"/>
+          <Image src={kotlin} width={50} height={50} alt="kotlin"/>
+          <Image src={css} width={50} height={50} alt="css"/>
+          <Image src={react} width={50} height={50} alt="react"/>
+          <Image src={reactn} width={50} height={50} alt="reactn"/>
+          <Image src={git} width={50} height={50} alt="git"/>
+          <Image src={cp} width={50} height={50} alt="cp"/>
+          <Image src={ex} width={50} height={50} alt="ex"/>
+          <Image src={dj} width={50} height={50} alt="dj"/>
+          <Image src={github} width={50} height={50} alt="gith"/>
+          <Image src={flask} width={50} height={50} alt="flask"/>
+          <Image src={mysql} width={50} height={50} alt="mysql"/>
+          {/* <Image src={c3} width={50} height={50} alt="c#"/> */}
+          <Image src={next} width={50} height={50} alt="next"/>
+          <Image src={eth} width={50} height={50} alt="eth"/>
+          <Image src={solidity} width={50} height={50} alt="sol"/>
+          <Image src={hh} width={50} height={50} alt="hh"/>
           
           
 

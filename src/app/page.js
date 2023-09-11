@@ -6,19 +6,27 @@ import {
   NavbarDefault,
   TechStack,
 } from "@/components"
+import { useInView } from "framer-motion"
 
-import { useState, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import ReactVisibilitySensor from "react-visibility-sensor"
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false)
   const [vissibleLink, setvissible] = useState("home")
+  const aboutref = useRef(null)
+  const aboutview = useInView(aboutref, { amount: "some", once: false })
 
-  function onChange(isVisible, link) {
-    if (isVisible) {
-      setvissible(link)
-    }
+  function onChange(link) {
+    setvissible(link)
   }
+  useEffect(() => {
+    if (aboutview) {
+      console.log(aboutview)
+      onChange("about")
+    }
+  }, [aboutview])
+
   return (
     <main
       className="min-h-screen overflow-hidden  bg-gradient-to-tr from-gray-200 via-gray-300 to-gray-400  scroll-smooth"
@@ -39,18 +47,13 @@ export default function Home() {
         setOpen={setOpen}
         activeLink={vissibleLink}
       />
-      <ReactVisibilitySensor onChange={(vis) => onChange(vis, "home")}>
-        <Hero />
-      </ReactVisibilitySensor>
-      <ReactVisibilitySensor onChange={(vis) => onChange(vis, "about")}>
+
+      <Hero onchange={onChange} />
+      <div ref={aboutref}>
         <About />
-      </ReactVisibilitySensor>
-      <ReactVisibilitySensor onChange={(vis) => onChange(vis, "stats")}>
         <NumberFacts />
-      </ReactVisibilitySensor>
-      <ReactVisibilitySensor onChange={(vis) => onChange(vis, "stack")}>
         <TechStack />
-      </ReactVisibilitySensor>
+      </div>
     </main>
   )
 }
