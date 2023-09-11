@@ -15,6 +15,7 @@ export default function AnimationWrapper({ from, to, transition, children }) {
       controls.set('from')
     }
     
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[isview])
 
   return (
@@ -31,7 +32,7 @@ export default function AnimationWrapper({ from, to, transition, children }) {
 
         transition={transition}
         
-      className="about " ref={ref}>
+      className="about w-full" ref={ref}>
       {children}
         </motion.div>
     

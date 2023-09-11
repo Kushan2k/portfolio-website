@@ -10,7 +10,7 @@ export default function NumberFacts() {
   
   
   return (
-    <div className="m-4 p-4 bg-white w-[95%] mx-auto md:w-[90%]">
+    <div id="stats" className="m-4 p-4 bg-white w-[95%] mx-auto md:w-[90%]">
 
       <Heading title={'Info'} />
       <div

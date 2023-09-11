@@ -1,26 +1,28 @@
 
 import Image from "next/image"
 import {FaLinkedin,FaGithub} from 'react-icons/fa6'
-import {FaWhatsapp,FaFacebook} from 'react-icons/fa'
+import { FaWhatsapp, FaFacebook } from 'react-icons/fa'
+import me from '../../../public/images/me.jpg'
 
-
-
+//placeholder url
+// 'https://previews.123rf.com/images/apoev/apoev2107/apoev210700033/171405527-default-avatar-photo-placeholder-gray-profile-picture-icon-business-man-illustration.jpg'
 
 function Hero() {
   return (
-    <div className="hero w-[95%] md:w-[90%] h-[90vh] grid grid-cols-1 md:grid-cols-2 items-center justify-center md:justify-center mx-auto  p-5 ">
+    <div id="home"  className="hero w-[95%] md:w-[90%] h-[90vh] grid grid-cols-1 md:grid-cols-2 items-center justify-center md:justify-center mx-auto  p-5 ">
       <div className="img flex items-center flex-col gap-y-8 justify-center w-1/2 mx-auto h-auto ">
         <Image src={
-          'https://previews.123rf.com/images/apoev/apoev2107/apoev210700033/171405527-default-avatar-photo-placeholder-gray-profile-picture-icon-business-man-illustration.jpg'
+          me
         }
+          
           alt="me"
           
           // width={100}
           // height={100}
           loading="lazy"
           width={200}
-          height={200}
-          className="rounded-full md:w-full border-2 border-blue-700"
+          height={170}
+          className="rounded-full  md:w-full border-2 border-blue-700"
           
         />
         <div className="social w-3/4 mx-auto flex items-center justify-around">

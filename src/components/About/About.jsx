@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import {FiChevronRight} from 'react-icons/fi'
 import AnimationWrapper, { Heading } from ".."
+import me2 from '../../../public/images/me2.jpg'
 
 
 export default function About() {
@@ -61,8 +62,9 @@ export default function About() {
         >
         
         <Image
-
-          src={'https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg'}
+            //placeholder img
+            // 'https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg'
+          src={me2}
 
           width={200}
           height={200}
