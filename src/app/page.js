@@ -5,11 +5,11 @@ import {
   NumberFacts,
   NavbarDefault,
   TechStack,
+  Portfolio,
 } from "@/components"
 import { useInView } from "framer-motion"
 
 import { useEffect, useRef, useState } from "react"
-import ReactVisibilitySensor from "react-visibility-sensor"
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false)
@@ -54,6 +54,7 @@ export default function Home() {
         <NumberFacts />
         <TechStack />
       </div>
+      <Portfolio onchange={onChange} />
     </main>
   )
 }

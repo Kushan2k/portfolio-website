@@ -21,7 +21,7 @@ function Hero({ onchange }) {
   },[ishomeVis])
   return (
     <div id="home" ref={ref}  className="hero w-[95%] md:w-[90%] h-[90vh] grid grid-cols-1 md:grid-cols-2 items-center justify-center md:justify-center mx-auto  p-5 ">
-      <div className="img flex items-center flex-col gap-y-8 justify-center w-1/2 mx-auto h-auto ">
+      <div className="img flex items-center rounded-full  flex-col gap-y-8 justify-center w-1/2 mx-auto h-auto ">
         <Image src={
           me
         }
@@ -32,8 +32,9 @@ function Hero({ onchange }) {
           // height={100}
           loading="lazy"
           width={200}
-          height={170}
-          className="rounded-full  md:w-full border-2 border-blue-700"
+          // height={170}
+          style={{ borderRadius:'50%',objectFit:'fill'}}
+          className="w-full  md:w-full border-2 border-blue-700"
           
         />
         <div className="social w-3/4 mx-auto flex items-center justify-around">
