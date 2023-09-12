@@ -3,6 +3,7 @@ import { Heading } from "..";
 import { useInView } from "framer-motion";
 
 import { useEffect, useRef, useState } from "react";
+import ProjectTabs from "./ProjectTabs";
 
 
 
@@ -10,7 +11,7 @@ import { useEffect, useRef, useState } from "react";
 export default function Portfolio({ onchange }) {
   
   const ref = useRef(null)
-  const isVisible = useInView(ref, { amount: 'some', once: false })
+  const isVisible = useInView(ref, { amount: 'all', once: false })
   
   useEffect(() => {
 
@@ -32,7 +33,7 @@ export default function Portfolio({ onchange }) {
       </p>
       
       <div className="mt-4">
-       
+       <ProjectTabs/>
       </div>
       
     </div>
