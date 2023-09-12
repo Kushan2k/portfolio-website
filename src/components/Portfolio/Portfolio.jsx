@@ -4,6 +4,8 @@ import { useInView } from "framer-motion";
 
 import { useEffect, useRef, useState } from "react";
 import ProjectTabs from "./ProjectTabs";
+import { FaAnglesRight } from "react-icons/fa6";
+
 
 
 
@@ -32,8 +34,14 @@ export default function Portfolio({ onchange }) {
         react native and flutter for mobile application development and python to provide machine learning driven solutions to the clients in need.
       </p>
       
-      <div className="mt-4">
-       <ProjectTabs/>
+      <div className="mt-4 relative flex justify-center pb-4">
+        <ProjectTabs />
+        <button onClick={() => {
+          alert("in Development")
+        }} className="rounded-full text-white absolute -bottom-9 mx-auto bg-blue-500 p-2 flex gap-x-1 text-sm">
+          More
+          <FaAnglesRight color="white" size={20} />
+        </button>
       </div>
       
     </div>

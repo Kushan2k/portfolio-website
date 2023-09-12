@@ -6,6 +6,7 @@ import NumberFacts from "./NumberFacts/NumberFacts"
 import Heading from "./Heading"
 import TechStack from "./TechStack/TechStack"
 import Portfolio from "./Portfolio/Portfolio"
+import Service from "./Service/Service"
 
 export {
   NavbarDefault,
@@ -15,5 +16,6 @@ export {
   Heading,
   TechStack,
   Portfolio,
+  Service,
 }
 export default AnimationWrapper

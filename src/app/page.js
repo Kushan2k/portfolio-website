@@ -6,6 +6,7 @@ import {
   NavbarDefault,
   TechStack,
   Portfolio,
+  Service,
 } from "@/components"
 import { useInView } from "framer-motion"
 
@@ -55,6 +56,7 @@ export default function Home() {
         <TechStack />
       </div>
       <Portfolio onchange={onChange} />
+      <Service onchange={onChange} />
     </main>
   )
 }
