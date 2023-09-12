@@ -41,22 +41,22 @@ export default function NumberFacts() {
           </AnimationWrapper>
 
           <AnimationWrapper from={{scale:0,opacity:0}} to={{scale:1,opacity:1}} transition={{delay:0.3,duration:0.4}}>
-            <Card className="w-[90%] mx-auto md:w-full  h-40 transition-transform   hover:cursor-pointer hover:scale-110">
-            <div className="item flex items-center justify-center">
-              <FiCheckCircle size={40} color="#23ef" />
-              <div className="m-4 flex flex-col items-start justify-start">
-                <h3 className="text-4xl font-[900]">
-                  <CountUp end={10} duration={4} />
-                </h3>
-                <p>
-                  <span className="font-bold">Completed </span>
-                  projects
-                </p>
+              <Card className="w-[90%] mx-auto md:w-full  h-40 transition-transform   hover:cursor-pointer hover:scale-110">
+              <div className="item flex items-center justify-center">
+                <FiCheckCircle size={40} color="#23ef" />
+                <div className="m-4 flex flex-col items-start justify-start">
+                  <h3 className="text-4xl font-[900]">
+                    <CountUp end={10} duration={4} />
+                  </h3>
+                  <p>
+                    <span className="font-bold">Completed </span>
+                    projects
+                  </p>
+                </div>
+              
+              
               </div>
-            
-            
-            </div>
-          </Card>
+            </Card>
           </AnimationWrapper>
           
           <AnimationWrapper from={{scale:0,opacity:0}} to={{scale:1,opacity:1}} transition={{delay:0.4,duration:0.4}}>

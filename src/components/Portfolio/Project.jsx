@@ -1,8 +1,11 @@
-
+'use client'
 import AnimationWrapper from "..";
-import {HiOutlineArrowsExpand} from 'react-icons/hi'
+import { HiOutlineArrowsExpand } from 'react-icons/hi'
+import { useState } from "react";
+import DismissableModal from "./Model";
 
-export default function Project({project,delay}) {
+export default function Project({ project, delay }) {
+  const [isopen,setisopen]=useState('')
   return (
     <AnimationWrapper
       from={{ scale: 0, opacity: 0.3 }}
@@ -12,9 +15,9 @@ export default function Project({project,delay}) {
     >
       <div className="mx-auto w-full  lg:flex border-[0.5px] shadow-lg transition-transform  relative">
 
-        <button className="lg:hidden bg-blue-600 p-2 text-white font-semibold rounded-full absolute right-3 top-3">
+        {/* <button className="lg:hidden bg-blue-600 p-2 text-white font-semibold rounded-full absolute right-3 top-3" onClick={() => setisopen('dismissible')} >
           <HiOutlineArrowsExpand size={20} color="#FFF"/>
-        </button>
+        </button> */}
 
         <div
           className="hidden md:flex lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden  "
@@ -47,6 +50,11 @@ export default function Project({project,delay}) {
           </div>
         </div>
       </div>
+
+      {/* <DismissableModal project={project} openModal={isopen} setOpenModal={setisopen}/> */}
+
+      
+      
 
     </AnimationWrapper>
   )
