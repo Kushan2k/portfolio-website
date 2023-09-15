@@ -47,6 +47,9 @@ function NavbarDefault({isOpen,setOpen,ref,activeLink}) {
           <Navbar.Link href="#about" className={activeLink=='about'?'text-blue-700 scale-110 text-xl':'text-xl'}  >
             About
           </Navbar.Link>
+          <Navbar.Link href="#resume" className={activeLink=='resume'?'text-blue-700 scale-110 text-xl':'text-xl'}  >
+            Resume
+          </Navbar.Link>
           
           <Navbar.Link href="#" className={activeLink=='portfolio'?'text-blue-700 scale-110 text-xl':'text-xl'}>
             Portfolio
@@ -105,9 +108,12 @@ function NavbarDefault({isOpen,setOpen,ref,activeLink}) {
           <li className={activeLink=='about'?'active-link':''}>
             <Link href={'#about'}>About</Link>
           </li>
+          <li className={activeLink=='resume'?'active-link':''}>
+            <Link href={'#resume'}>Resume</Link>
+          </li>
           
-          <li className={activeLink=='sportfolio'?'active-link':''}>
-            <Link href={'#sportfolio'}>Portfolio</Link>
+          <li className={activeLink=='portfolio'?'active-link':''}>
+            <Link href={'#portfolio'}>Portfolio</Link>
           </li>
           <li className={activeLink=='services'?'active-link':''}>
             <Link href={'#services'}>Services</Link>

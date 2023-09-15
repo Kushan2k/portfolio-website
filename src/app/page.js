@@ -7,26 +7,18 @@ import {
   TechStack,
   Portfolio,
   Service,
+  Resume,
 } from "@/components"
-import { useInView } from "framer-motion"
 
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 
 export default function Home() {
   const [isOpen, setOpen] = useState(false)
   const [vissibleLink, setvissible] = useState("home")
-  const aboutref = useRef(null)
-  const aboutview = useInView(aboutref, { amount: "some", once: false })
 
   function onChange(link) {
     setvissible(link)
   }
-  useEffect(() => {
-    if (aboutview) {
-      console.log(aboutview)
-      onChange("about")
-    }
-  }, [aboutview])
 
   return (
     <main
@@ -50,11 +42,10 @@ export default function Home() {
       />
 
       <Hero onchange={onChange} />
-      <div ref={aboutref}>
-        <About />
-        <NumberFacts />
-        <TechStack />
-      </div>
+
+      <About onchange={onChange} />
+
+      <Resume onchange={onChange} />
       <Portfolio onchange={onChange} />
       <Service onchange={onChange} />
     </main>

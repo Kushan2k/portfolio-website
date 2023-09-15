@@ -68,7 +68,9 @@ export default function TechStack() {
 
   return (
     <div id="stack" className="m-4 p-4 bg-white w-[95%] mx-auto md:w-[90%]">
-      <Heading title={'My Stack'} />
+      <h2 className="text-left font-header text-2xl font-semibold uppercase text-primary sm:text-2xl lg:text-3xl my-3">
+        My Stack
+      </h2>
       <p className="mx-4">
         {/* eslint-disable-next-line react/no-unescaped-entities*/}
         Started with HTML and CSS now i'm in the field of full stack development web and mobile within the process to learning Machine Learning,Neural networks and Blockchain associated development with smart contracts.

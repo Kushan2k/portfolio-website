@@ -12,10 +12,11 @@ export default function NumberFacts() {
   return (
     <div id="stats" className="m-4 p-4 bg-white w-[95%] mx-auto md:w-[90%]">
 
-      <Heading title={'Stats'} />
-      <div
       
-      >
+      <h2 className="text-left font-header text-2xl font-semibold uppercase text-primary sm:text-2xl lg:text-3xl my-3">
+        Stats
+      </h2>
+      <div>
         <p className="mx-4">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex maiores voluptatibus delectus non reiciendis impedit asperiores beatae facilis nam magni? Inventore minima ab iusto facere quis obcaecati nisi, distinctio quam!
         </p>

@@ -1,14 +1,28 @@
 
 import Image from 'next/image'
 import {FiChevronRight} from 'react-icons/fi'
-import AnimationWrapper, { Heading } from ".."
+import AnimationWrapper, { Heading, NumberFacts, TechStack } from ".."
 import me2 from '../../../public/images/me2.jpg'
+import { useEffect, useRef } from 'react'
+import { useInView } from 'framer-motion'
 
 
-export default function About() {
+export default function About({onchange}) {
+
+  const ref = useRef(null)
+  const isVisible = useInView(ref, { amount: 'some', once: false })
+  
+  useEffect(() => {
+
+    if (isVisible) {
+      onchange("about")
+    }
+    
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isVisible])
 
   return (
-    <div id='about' className="w-[95%] p-4 m-4 bg-white md:w-[90%] mx-auto flex flex-col overflow-hidden">
+    <div id='about' ref={ref} className="w-[95%] p-4 m-4 bg-white md:w-[90%] mx-auto flex flex-col overflow-hidden">
       
 
       <AnimationWrapper
@@ -144,6 +158,10 @@ export default function About() {
         </ul>
       </AnimationWrapper>
       </div>
+      <hr />
+      <NumberFacts />
+      <hr />
+      <TechStack />
 
     </div>
   )

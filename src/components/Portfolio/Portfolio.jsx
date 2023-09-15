@@ -13,7 +13,7 @@ import { FaAnglesRight } from "react-icons/fa6";
 export default function Portfolio({ onchange }) {
   
   const ref = useRef(null)
-  const isVisible = useInView(ref, { amount: 'all', once: false })
+  const isVisible = useInView(ref, { amount: 'some', once: false })
   
   useEffect(() => {
 
