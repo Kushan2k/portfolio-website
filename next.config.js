@@ -6,6 +6,7 @@ const nextConfig = {
       "t3.ftcdn.net",
       "images.unsplash.com",
       "flowbite.com",
+      "drive.google.com",
     ],
   },
 }

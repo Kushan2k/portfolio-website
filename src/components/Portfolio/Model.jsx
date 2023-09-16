@@ -21,33 +21,16 @@ export default function DismissableModal({openModal, setOpenModal,project}) {
               leftControl="left"
               rightControl="right"
             >
-              <Image
-                width={400}
-                height={200}
-                alt="..."
-                src="https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
-              />
-              <Image
-                width={400}
-                height={200}
-                alt="..."
-                src="https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
-              />
-              <Image
-                fill
-                alt="..."
-                src="https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
-              />
-              <Image
-                fill
-                alt="..."
-                src="https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
-              />
-              <Image
-                fill
-                alt="..."
-                src="https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
-              />
+              {
+                project.images?.map(img => (
+                  <Image
+                    key={img}
+                    fill
+                    alt="..."
+                    src="https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
+                  />
+                ))
+              }
             </Carousel>
           </div>
         </Modal.Body>

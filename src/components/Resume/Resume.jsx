@@ -12,7 +12,7 @@ const exp = [
                         venenatis enim.`
   },
   {
-    period: 'Apr 2015 - Mar 2018',
+    period: 'Apr 2015 - Mar 2019',
     role: 'Frontend Developer',
     job:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac

@@ -15,14 +15,20 @@ export default function Project({ project, delay }) {
     >
       <div className="mx-auto w-full  lg:flex border-[0.5px] shadow-lg transition-transform  relative">
 
-        {/* <button className="lg:hidden bg-blue-600 p-2 text-white font-semibold rounded-full absolute right-3 top-3" onClick={() => setisopen('dismissible')} >
+        <button className="lg:hidden bg-blue-600 p-2 text-white font-semibold rounded-full absolute right-3 top-3" onClick={() => setisopen('dismissible')} >
           <HiOutlineArrowsExpand size={20} color="#FFF"/>
-        </button> */}
+        </button>
 
         <div
-          className="hidden md:flex lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden  "
+          className="hidden md:flex lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden transition-transform  hover:scale-75  hover:cursor-pointer"
           style={{
             backgroundImage: `url(${project.cover})`,
+            objectFit: 'contain',
+            backgroundPosition: 'center',
+            backgroundClip: 'content-box',
+            backgroundSize: 'cover',
+            backgroundRepeat:'no-repeat'
+            
             
         }
         }
@@ -51,7 +57,7 @@ export default function Project({ project, delay }) {
         </div>
       </div>
 
-      {/* <DismissableModal project={project} openModal={isopen} setOpenModal={setisopen}/> */}
+      <DismissableModal project={project} openModal={isopen} setOpenModal={setisopen}/>
 
       
       
