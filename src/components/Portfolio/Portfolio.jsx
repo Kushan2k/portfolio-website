@@ -2,7 +2,7 @@
 import { Heading } from "..";
 import { useInView } from "framer-motion";
 
-import { Suspense, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ProjectTabs from "./ProjectTabs";
 import { FaAnglesRight } from "react-icons/fa6";
 import { Spinner } from "flowbite-react";
@@ -13,6 +13,8 @@ async function loadData() {
   
   if (res.ok) {
     const data = await res.json()
+
+  
     return data.data
   } else {
     return []
@@ -41,6 +43,7 @@ export default function Portfolio({ onchange }) {
     async function l() {
       const d = await loadData()
       setData(d)
+      setloading(false)
     }
     l()
 
@@ -58,25 +61,31 @@ export default function Portfolio({ onchange }) {
       
       <div className="mt-4 relative flex justify-center pb-4">
 
-        <Suspense fallback={() => {
-          return (
+        {
+          loading ? (
             <div className="w-full flex items-center justify-center ">
               <Spinner
                 aria-label="Extra large spinner example"
                 size="xl"
               />
             </div>
+          ) : (
+              <>
+                <ProjectTabs projects={data} />
+                <button onClick={() => {
+                  alert("in Development")
+                }} className="rounded-full text-white absolute -bottom-9 mx-auto bg-blue-500 p-2 flex gap-x-1 text-sm">
+                  More
+                  <FaAnglesRight color="white" size={20} />
+                </button>
+              </>
           )
-        }}>
+        }
+            
+          
         
-          <ProjectTabs projects={data} />
-          <button onClick={() => {
-            alert("in Development")
-          }} className="rounded-full text-white absolute -bottom-9 mx-auto bg-blue-500 p-2 flex gap-x-1 text-sm">
-            More
-            <FaAnglesRight color="white" size={20} />
-            </button>
-        </Suspense>
+          
+       
             
       </div>
       

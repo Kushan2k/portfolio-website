@@ -21,6 +21,7 @@ export default function Project({ project, delay }) {
 
         <div
           className="hidden md:flex lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden transition-transform  hover:scale-75  hover:cursor-pointer"
+          onClick={() => setisopen('dismissible')}
           style={{
             backgroundImage: `url(${project.cover})`,
             objectFit: 'contain',
@@ -44,7 +45,7 @@ export default function Project({ project, delay }) {
             <div className="text-gray-900 font-bold text-xl mb-2 first-letter:capitalize">{project.title}</div>
             <p className="text-gray-700 text-base first-letter:capitalize">{project.description}</p>
           </div>
-          <div className="flex items-start flex-wrap mx-3">
+          <div className="flex items-start flex-wrap mx-1">
             
             {
               project.tags.map(tag => (

@@ -66,7 +66,7 @@ function NavbarDefault({isOpen,setOpen,ref,activeLink}) {
 
       <div className="hidden fixed w-3/4 border-b-2 border-blue-700  md:block"></div>
       
-      <button onClick={changeopne} className='fixed mt-5 mr-3 md:hidden  rounded-full bg-gradient-to-tr from-blue-700 to-blue-900 p-2 transition-transform hover:scale-110'>
+      <button onClick={changeopne} className='fixed mt-5 mr-3 md:hidden z-50 rounded-full bg-gradient-to-tr from-blue-700 to-blue-900 p-2 transition-transform hover:scale-110'>
 
         {
           isOpen ? <HiRefresh className='transition-opacity' size={35} color='white'/>:<HiMenuAlt3 className='transition-opacity' size={35} color='white' />
