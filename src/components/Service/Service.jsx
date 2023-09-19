@@ -17,7 +17,7 @@ export default function Service({onchange}) {
   return (
     <div id="services" ref={ref} className="m-4 p-4 bg-white w-[95%] mx-auto md:w-[90%]">
       <Heading title={'My Services'} />
-      <p>in development today</p>
+      
     </div>
   )
 }

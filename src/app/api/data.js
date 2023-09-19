@@ -8,6 +8,7 @@ export const data = [
       a user can log in to the system and order foods,book tables also user can view the status of the foods that in delivery stage. 
       `,
     cover: "https://drive.google.com/uc?id=1_g6PxUxHVCrR-R-ff566IBDqXqw7ID4o",
+    url: "https://nirmanahomedecortest.000webhostapp.com/index.php",
     tags: ["html", "css", "php", "javascipt", "bootstrap"],
     images: [
       "https://drive.google.com/uc?id=1BuBRQCCUuBZXwcdIKID-BkpunRd0E8bO",
@@ -27,6 +28,7 @@ export const data = [
       web site for animal care center using HTML,CSS,Javascript and bootstrap
       no backend 
       `,
+    url: "https://harshani2000.github.io/cluck-website/",
 
     cover: "https://drive.google.com/uc?id=1_vT7Is2wBdQJmybOfRlF6Jq1cLLCPZug",
     tags: ["bootstrap", "html", "css", "javascipt"],
@@ -45,6 +47,7 @@ export const data = [
     description: `
       my first project using nextjs with server side rendering.all the porperty data is fetching from Rapid API, deployed to vercel. next 13 page router is used
       `,
+    url: "https://real-state-app-gamma.vercel.app/",
 
     cover: "https://drive.google.com/uc?id=11hMEtBcgV6uhClXOLnxg53pHIrlr_17j",
     tags: ["nextjs", "react", "rapidapi", "ssr", "tailwind", "chakraUI"],
@@ -55,7 +58,7 @@ export const data = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     type: "web application",
     title: "accomedation management for university",
     description: `
@@ -63,6 +66,7 @@ export const data = [
       students can get know information about the univeristy accomedations.
       in development
       `,
+    url: "https://accomodation-system-web.vercel.app/",
 
     cover: "https://drive.google.com/uc?id=1vndbcZPX-2NuTU_zvQposrenxS-vJ4r-",
     tags: ["react", "firebase", "bootstrap", "javascript"],
@@ -73,13 +77,14 @@ export const data = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     type: "mobile application",
     title: "show bitz-movie/series browsing mobile application",
     description: `
       user can browse trending movies/series/actors of the day,week and all time.
       watch official trailers get to know more information about the shows and actors.
       `,
+    url: "https://github.com/Kushan2k/show-bitz-mobile-app",
 
     cover: "https://drive.google.com/uc?id=12VZDswOwYhZ2yA1dm1Vndygu56pPpCqU",
     tags: ["dart", "flutter", "android", "tmdb api"],

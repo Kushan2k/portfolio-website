@@ -15,13 +15,17 @@ export default function Project({ project, delay }) {
     >
       <div className="mx-auto w-full  lg:flex border-[0.5px] shadow-lg transition-transform  relative">
 
-        <button className="lg:hidden bg-blue-600 p-2 text-white font-semibold rounded-full absolute right-3 top-3" onClick={() => setisopen('dismissible')} >
+        {/* <button className=" bg-blue-600 p-2 text-white font-semibold rounded-full absolute right-3 top-3" onClick={() => setisopen('dismissible')} >
           <HiOutlineArrowsExpand size={20} color="#FFF"/>
-        </button>
+        </button> */}
+
+        <a href={project.url} target="_blank" className=" bg-blue-600 p-2 text-white font-semibold rounded-full absolute right-3 top-3"  >
+          <HiOutlineArrowsExpand size={20} color="#FFF"/>
+        </a>
 
         <div
-          className="hidden md:flex lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden transition-transform  hover:scale-75  hover:cursor-pointer"
-          onClick={() => setisopen('dismissible')}
+          className="hidden md:hidden lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden transition-transform  hover:scale-75  hover:cursor-pointer"
+          // onClick={() => setisopen('dismissible')}
           style={{
             backgroundImage: `url(${project.cover})`,
             objectFit: 'contain',
@@ -30,13 +34,13 @@ export default function Project({ project, delay }) {
             backgroundSize: 'cover',
             backgroundRepeat:'no-repeat'
             
-            
+  
         }
         }
-          title="Woman holding a mug"
-        >
+          title="project image"
+        />
         
-        </div>
+        
         <div className=" p-4 flex flex-col justify-between leading-normal">
           <div className="mb-8">
             <p className="text-sm text-gray-600 flex items-center">
