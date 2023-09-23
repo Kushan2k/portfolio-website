@@ -20,7 +20,7 @@ function Hero({ onchange }) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[ishomeVis])
   return (
-    <div id="home" ref={ref}  className="hero w-[95%] md:w-[90%] h-[90vh] grid grid-cols-1 md:grid-cols-2 items-center justify-center md:justify-center mx-auto  p-5 ">
+    <div id="home" ref={ref}  className="hero w-[95%] md:w-[90%] h-[90vh] grid grid-cols-1 md:grid-cols-2 items-center justify-center md:justify-center mx-auto  p-5 dark:text-white dark:bg-black">
       <div className="img flex items-center rounded-full  flex-col gap-y-8 justify-center w-1/2 mx-auto h-auto ">
         <Image src={
           me
@@ -56,7 +56,7 @@ function Hero({ onchange }) {
 
       <div className="info  w-4/5 flex items-center flex-col justify-center mx-auto text-right  md:mx-0">
 
-        <h2 className="text-[2.5em] font-mono font-extrabold  capitalize text-transparent bg-clip-text bg-gradient-to-tr from-blue-900 via-blue-500 to-blue-900">
+        <h2 className="text-[2.5em] font-mono font-extrabold  capitalize text-transparent bg-clip-text bg-gradient-to-tr from-blue-900 via-blue-500 to-blue-900 dark:text-white">
           kushan gayantha
           
         </h2>

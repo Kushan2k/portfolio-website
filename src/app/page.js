@@ -21,20 +21,7 @@ export default function Home() {
   }
 
   return (
-    <main
-      className="min-h-screen overflow-hidden  bg-gradient-to-tr from-gray-200 via-gray-300 to-gray-400  scroll-smooth"
-      style={{
-        backgroundImage:
-          "url(https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/04/low_poly_banner_design_1711-e1655987082738.jpg?resize=1000%2C750&ssl=1)",
-
-        backgroundBlendMode: "color",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        objectFit: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "scroll",
-      }}
-    >
+    <main className="min-h-screen overflow-hidden  bg-gradient-to-tr from-gray-200 via-gray-300 to-gray-200  scroll-smooth dark:bg-black ">
       <NavbarDefault
         isOpen={isOpen}
         setOpen={setOpen}

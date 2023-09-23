@@ -6,7 +6,7 @@ export default function Heading({title}) {
     //       {title}
           
     // </h2>
-    <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl my-3">
+    <h2 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl my-3 dark:text-sky-600">
         {title}
       </h2>
   )

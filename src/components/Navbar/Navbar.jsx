@@ -28,7 +28,7 @@ function NavbarDefault({isOpen,setOpen,ref,activeLink}) {
   }, [isOpen])
   
   return (
-    <div ref={ref} className="navbar h-16 flex md:flex-col items-center justify-end w-rounded-r-full pb-5 md:pb-0">
+    <div ref={ref} className="navbar h-16 flex md:flex-col items-center justify-end w-rounded-r-full z-50 pb-5 md:pb-0">
       
       <Navbar fluid className='w-full fixed h-16 hidden bg-gray-100 md:flex md:justify-between md:items-center ' >
         
