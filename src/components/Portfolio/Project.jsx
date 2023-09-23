@@ -13,7 +13,7 @@ export default function Project({ project, delay }) {
       transition={{bouce:true,delay:delay,duration:0.5}}
     
     >
-      <div className="mx-auto w-full  lg:flex border-[0.5px] shadow-lg transition-transform  relative">
+      <div className="mx-auto w-full lg:h-72 lg:flex border-[0.5px] shadow-lg transition-transform  relative">
 
         {/* <button className=" bg-blue-600 p-2 text-white font-semibold rounded-full absolute right-3 top-3" onClick={() => setisopen('dismissible')} >
           <HiOutlineArrowsExpand size={20} color="#FFF"/>

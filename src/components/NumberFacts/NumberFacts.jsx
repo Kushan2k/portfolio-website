@@ -18,7 +18,7 @@ export default function NumberFacts() {
       </h2>
       <div>
         <p className="mx-4">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex maiores voluptatibus delectus non reiciendis impedit asperiores beatae facilis nam magni? Inventore minima ab iusto facere quis obcaecati nisi, distinctio quam!
+          My previous projects reflect a history of delivering results. Explore the array of client projects that demonstrate my ability to meet diverse needs and consistently exceed expectations.
         </p>
 
         <div className="mt-4 grid items-center gap-y-4 md:gap-x-2 justify-evenly grid-cols-1 md:grid-cols-3">

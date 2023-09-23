@@ -8,6 +8,7 @@ import {
   Portfolio,
   Service,
   Resume,
+  Contact,
 } from "@/components"
 
 import { useState } from "react"
@@ -35,6 +36,7 @@ export default function Home() {
       <Resume onchange={onChange} />
       <Portfolio onchange={onChange} />
       <Service onchange={onChange} />
+      <Contact onchange={onChange} />
     </main>
   )
 }

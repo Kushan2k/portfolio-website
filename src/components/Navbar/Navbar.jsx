@@ -51,13 +51,13 @@ function NavbarDefault({isOpen,setOpen,ref,activeLink}) {
             Resume
           </Navbar.Link>
           
-          <Navbar.Link href="#" className={activeLink=='portfolio'?'text-blue-700 scale-110 text-xl':'text-xl'}>
+          <Navbar.Link href="#portfolio" className={activeLink=='portfolio'?'text-blue-700 scale-110 text-xl':'text-xl'}>
             Portfolio
           </Navbar.Link>
-          <Navbar.Link href="#" className={activeLink=='services'?'text-blue-700 scale-110 text-xl':'text-xl'}>
+          <Navbar.Link href="#services" className={activeLink=='services'?'text-blue-700 scale-110 text-xl':'text-xl'}>
             Services
           </Navbar.Link>
-          <Navbar.Link href="#" className={activeLink=='contacts'?'text-blue-700 scale-110 text-xl':'text-xl'}>
+          <Navbar.Link href="#contacts" className={activeLink=='contacts'?'text-blue-700 scale-110 text-xl':'text-xl'}>
             Contacts
           </Navbar.Link>
         </Navbar.Collapse>

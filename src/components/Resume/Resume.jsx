@@ -1,28 +1,35 @@
 import { useEffect, useRef } from "react";
-import { Heading } from "..";
+import AnimationWrapper, { Heading } from "..";
 import { useInView } from "framer-motion";
 
 
 const exp = [
   {
-    period: 'Apr 2015 - Mar 2018',
-    role: 'Frontend Developer',
-    job:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
-                        venenatis enim.`
+    period: 'Mar 2021 - Present',
+    role: 'Undergraduate',
+    job:`Currently Studying Enformation and communication engineering at SLTC Reasearch University Sri Lanka.`
   },
   {
-    period: 'Apr 2015 - Mar 2019',
-    role: 'Frontend Developer',
-    job:`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
-                        venenatis enim.`
+    period: 'January 2019 - April 2023',
+    role: 'Freelancer',
+    job:`did some freelancing work on freelancer and fiver.`
+  },
+  {
+    period: 'December 2019 - April 2020',
+    role: 'Information technology',
+    job:`basic information and communication technology deploma at ESOFT Metro campus kurunegala.`
+  },
+  {
+    period: 'January 2017 - August 2019',
+    role: 'G.C.E Adavanced Level',
+    job:`Advanced Level Mathametics in Maliyadewa College Kurunegala`
   },
 ]
 
 export default function Resume({onchange}) {
   const ref = useRef(null)
   const isVisible = useInView(ref, { amount: 'some', once: false })
+  let delay=0.2
   
   useEffect(() => {
 
@@ -38,40 +45,54 @@ export default function Resume({onchange}) {
         <Heading title={'Resume'}/>
         
         <p className="mx-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quos perferendis eos quo eveniet quisquam non molestiae, expedita labore debitis delectus doloribus harum. Nihil harum dolores in necessitatibus ab debitis.
+          Explore my resume to discover my skills, qualifications, and experiences that make me the ideal candidate for your next project or opportunity.
+          explore how I can contribute to your projects and organizations. Let&apos;s make the next career move together!
         </p>
 
         <div className="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
           <span className="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
 
           {
-            exp.map(ex => (
-              <div key={ex.period} className="mt-8 flex flex-col justify-end text-center md:flex-row md:text-left">
-            
-                <div className="md:w-3/5">
-                  <div className="relative flex md:pl-18  border-l-2 border-gray-700">
-                    <span className="absolute -left-2 -top-1 hidden h-4 w-4 rounded-full border-2 border-black bg-black md:block  "></span>
+            exp.map((ex,index) => (
+              <AnimationWrapper key={ex.period}
+                
+                from={{
+                  opacity:0
+                }}
+                to={{ opacity: 1 }}
+                transition={{
+                  bounce: true,
+                  duration: 0.4,
+                  delay:(delay)+(delay*index)
+                }}
+              >
+                  <div  className="mt-8 flex flex-col justify-end text-center md:flex-row md:text-left">
+              
+                  <div className="md:w-3/5">
+                    <div className="relative flex md:pl-18  border-l-2 border-gray-700">
+                      <span className="absolute -left-2 -top-1 hidden h-4 w-4 rounded-full border-2 border-black bg-black md:block  "></span>
 
-                    <div className="mt-1 flex ml-[2rem]">
-                      <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
-                      <div className="md:-mt-1 md:pl-8">
-                        <span className="block font-body font-bold text-grey-40">
-                          {ex.period}
-                        </span>
-                        <span className="block pt-2 font-header text-xl font-bold uppercase text-primary">
-                          {ex.role}
-                        </span>
-                        <div className="pt-2">
-                          <span className="block font-body text-black">
-                            {ex.job}
+                      <div className="mt-1 flex ml-[2rem]">
+                        <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
+                        <div className="md:-mt-1 md:pl-8">
+                          <span className="block font-body font-bold text-grey-40">
+                            {ex.period}
                           </span>
+                          <span className="block pt-2 font-header text-xl font-bold uppercase text-primary">
+                            {ex.role}
+                          </span>
+                          <div className="pt-2">
+                            <span className="block font-body text-black">
+                              {ex.job}
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-              </div>
+                </div>
+              </AnimationWrapper>
             ))
           }
           

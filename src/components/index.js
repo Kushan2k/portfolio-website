@@ -8,6 +8,7 @@ import TechStack from "./TechStack/TechStack"
 import Portfolio from "./Portfolio/Portfolio"
 import Service from "./Service/Service"
 import Resume from "./Resume/Resume"
+import { Contact } from "./Contact/Contact"
 
 export {
   NavbarDefault,
@@ -19,5 +20,6 @@ export {
   Portfolio,
   Service,
   Resume,
+  Contact,
 }
 export default AnimationWrapper
