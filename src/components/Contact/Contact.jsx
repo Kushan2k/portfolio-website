@@ -21,11 +21,13 @@ export const Contact = ({onchange}) => {
 
 
   function handelSubmit(e) {
+
+    const text=`Hello I'm ${e.target.name}. \nEmail:${e.target.email} \nMessage:${e.target.message}`
     // e.preventDefault()
-    window.location.href=`https://api.whatsapp.com/send?phone=+94712720033&msg=${e.target.message}`
+    window.location.href=`https://api.whatsapp.com/send?phone=+94712720033&text=${text}`
   }
   return (
-    <div id="contacts" ref={ref} className="m-4 p-4 bg-white w-[95%] mx-auto md:w-[90%]">
+    <div id="contacts" ref={ref} className="m-4 p-4 bg-white  mx-auto w-full  dark:bg-black">
       <Heading title={'Contact'} />
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="flex justify-center align-items-center">
@@ -36,15 +38,17 @@ export const Contact = ({onchange}) => {
         </p>
         </div>
         <div class="w-full mt-4 md:mt-0 md:w-96 md:max-w-full mx-auto">
-          <div class="p-6 border border-gray-300 sm:rounded-md">
+          <div class="p-6 border border-gray-300 sm:rounded-md dark:border-gray-700">
             <form onSubmit={handelSubmit} >
               <label class="block mb-6">
-                <span class="text-gray-700">Your name</span>
+                <span class="text-gray-700 dark:text-gray-200">Your name</span>
                 <input
                   type="text"
                   name="name"
                   class="
+                  dark:text-white dark:bg-gray-700
                     block
+                    dark:border-none
                     w-full
                     mt-1
                     border-gray-300
@@ -59,12 +63,14 @@ export const Contact = ({onchange}) => {
                 />
               </label>
               <label class="block mb-6">
-                <span class="text-gray-700">Email address</span>
+                <span class="text-gray-700 dark:text-gray-200">Email address</span>
                 <input
                   name="email"
                   type="email"
                   class="
+                  dark:text-white dark:bg-gray-700
                     block
+                    dark:border-none
                     w-full
                     mt-1
                     border-gray-300
@@ -80,13 +86,15 @@ export const Contact = ({onchange}) => {
                 />
               </label>
               <label class="block mb-6">
-                <span class="text-gray-700">Message</span>
+                <span class="text-gray-700 dark:text-gray-200">Message</span>
                 <textarea
                   name="message"
                   class="
+                  dark:text-white dark:bg-gray-700
                     block
                     w-full
                     mt-1
+                    dark:border-none
                     border-gray-300
                     rounded-md
                     shadow-sm

@@ -67,7 +67,7 @@ export default function TechStack() {
   
 
   return (
-    <div id="stack" className="m-4 p-4 bg-white w-[95%] mx-auto md:w-[90%]">
+    <div id="stack" className="m-4 p-4 bg-white w-full mx-auto  dark:bg-black">
       <h2 className="text-left font-header text-2xl font-semibold uppercase text-primary sm:text-2xl lg:text-3xl my-3">
         My Stack
       </h2>
@@ -96,7 +96,7 @@ export default function TechStack() {
                 }}
                 
                 key={stack.id}>
-                <div className="w-full  p-3 rounded-r-lg border">
+                <div className="w-full  p-3 my-2 rounded-lg border dark:border-gray-700">
                 <p className="py-2">{stack.name}</p>
                 <ProgressBar
                   className='w-full'
@@ -123,7 +123,7 @@ export default function TechStack() {
 
       <div>
         <h2 className="font-semibold text-2xl">Additionals</h2>
-        <div className="gap-3 justify-center flex-wrap m-4 p-2 w-full flex mx-auto items-center md:justify-start border rounded-lg">
+        <div className="gap-3 justify-center flex-wrap m-4 p-2 w-full flex mx-auto items-center md:justify-start border rounded-lg dark:border-gray-600">
           <Image src={html} width={50} height={50} alt="html"/>
           <Image src={js} width={50} height={50} alt="js"/>
           <Image src={php} width={50} height={50} alt="js"/>
@@ -138,15 +138,15 @@ export default function TechStack() {
           <Image src={reactn} width={50} height={50} alt="reactn"/>
           <Image src={git} width={50} height={50} alt="git"/>
           <Image src={cp} width={50} height={50} alt="cp"/>
-          <Image src={ex} width={50} height={50} alt="ex"/>
+          <Image src={ex} className="dark:bg-gray-200 dark:rounded-full" width={50} height={50} alt="ex"/>
           <Image src={dj} width={50} height={50} alt="dj"/>
-          <Image src={github} width={50} height={50} alt="gith"/>
-          <Image src={flask} width={50} height={50} alt="flask"/>
+          <Image src={github} className="dark:bg-gray-200 dark:rounded-full" width={50} height={50} alt="gith"/>
+          <Image src={flask} className="dark:bg-gray-200 dark:rounded-full" width={50} height={50} alt="flask"/>
           <Image src={mysql} width={50} height={50} alt="mysql"/>
           {/* <Image src={c3} width={50} height={50} alt="c#"/> */}
-          <Image src={next} width={50} height={50} alt="next"/>
-          <Image src={eth} width={50} height={50} alt="eth"/>
-          <Image src={solidity} width={50} height={50} alt="sol"/>
+          <Image src={next} className="dark:bg-gray-200 dark:rounded-full dark:px-2" width={50} height={50} alt="next"/>
+          <Image src={eth} className="dark:bg-blue-300 dark:rounded-full" width={50} height={50} alt="eth"/>
+          <Image src={solidity} className="dark:bg-gray-200 dark:rounded-full" width={50} height={50} alt="sol"/>
           <Image src={hh} width={50} height={50} alt="hh"/>
           
           

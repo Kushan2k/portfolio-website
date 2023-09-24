@@ -40,7 +40,7 @@ export default function Resume({onchange}) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isVisible])
   return (
-    <div id="resume" ref={ref} className="m-4 p-4 bg-white w-[95%] mx-auto md:w-[90%]">
+    <div id="resume" ref={ref} className="m-4 p-4 bg-white w-full mx-auto  dark:bg-black">
       <div className="container py-6 " id="work">
         <Heading title={'Resume'}/>
         
@@ -66,23 +66,23 @@ export default function Resume({onchange}) {
                   delay:(delay)+(delay*index)
                 }}
               >
-                  <div  className="mt-8 flex flex-col justify-end text-center md:flex-row md:text-left">
+                  <div  className="mt-8 flex flex-col justify-end text-center md:flex-row md:text-left ">
               
                   <div className="md:w-3/5">
-                    <div className="relative flex md:pl-18  border-l-2 border-gray-700">
-                      <span className="absolute -left-2 -top-1 hidden h-4 w-4 rounded-full border-2 border-black bg-black md:block  "></span>
+                    <div className="relative flex md:pl-18 dark:border-white  border-l-2 border-gray-700">
+                      <span className="absolute -left-2 -top-1 hidden h-4 w-4 rounded-full border-2 border-black dark:bg-white  bg-black md:block  "></span>
 
-                      <div className="mt-1 flex ml-[2rem]">
+                      <div className="mt-1 flex ml-[2rem] p-4 dark:bg-gray-800">
                         <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
                         <div className="md:-mt-1 md:pl-8">
-                          <span className="block font-body font-bold text-grey-40">
+                          <span className="block font-body dark:text-gray-400 font-bold dark:font-semibold text-grey-40">
                             {ex.period}
                           </span>
-                          <span className="block pt-2 font-header text-xl font-bold uppercase text-primary">
+                          <span className="block dark:text-gray-200 pt-2 font-header text-xl font-bold uppercase text-primary">
                             {ex.role}
                           </span>
                           <div className="pt-2">
-                            <span className="block font-body text-black">
+                            <span className="block font-body text-black dark:text-gray-200">
                               {ex.job}
                             </span>
                           </div>

@@ -42,7 +42,7 @@ export default function Service({onchange}) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isVisible])
   return (
-    <div id="services" ref={ref} className="m-4 mt-12 pb-10 bg-white w-[95%] mx-auto md:w-[90%]">
+    <div id="services" ref={ref} className="m-4 mt-4 pb-10 bg-white  mx-auto w-full  dark:bg-black pt-5">
       <Heading title={'My Services'} />
       
 
@@ -66,21 +66,21 @@ export default function Service({onchange}) {
                 delay:delay
               }}
               key={index}>
-              <Card
-                  className="w-[90%]  mx-auto h-40 py-3"
-                  
-                >
+              
+              <Card  className="w-[90%]  mx-auto md:h-40 py-3 dark:bg-gray-700">
+                
                   <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     <p className="capitalize">
                       {resvice.title}
                     </p>
                   </h5>
-                  <p className="font-normal text-gray-700 dark:text-gray-400">
-                    <p className="first-letter:capitalize">
-                      {resvice.description}
-                    </p>
+                  
+                  <p className="font-normal text-gray-700 dark:text-gray-100  first-letter:capitalize">
+                    {resvice.description}
                   </p>
+                  
               </Card>
+              
             </AnimationWrapper>
           ))
         }

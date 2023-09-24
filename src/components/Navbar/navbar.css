@@ -3,5 +3,5 @@
 }
 
 .active-link {
-  @apply border-b-2 scale-110 text-blue-700 flex items-center justify-center border-blue-700 w-[30%]  transition-transform;
+  @apply border-b-2 scale-110 text-blue-700 flex items-center justify-center border-blue-700 w-[30%]  transition-transform dark:text-blue-400 dark:border-blue-400;
 }

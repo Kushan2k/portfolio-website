@@ -10,7 +10,7 @@ export default function NumberFacts() {
   
   
   return (
-    <div id="stats" className="m-4 p-4 bg-white w-[95%] mx-auto md:w-[90%]">
+    <div id="stats" className="m-4 p-4 dark:bg-black bg-white w-full mx-auto ">
 
       
       <h2 className="text-left font-header text-2xl font-semibold uppercase text-primary sm:text-2xl lg:text-3xl my-3">

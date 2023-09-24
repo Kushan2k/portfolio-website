@@ -22,7 +22,7 @@ export default function About({onchange}) {
   }, [isVisible])
 
   return (
-    <div id='about' ref={ref} className="w-[95%] p-4 m-4 bg-white md:w-[90%] mx-auto flex flex-col overflow-hidden  dark:bg-black ">
+    <div id='about' ref={ref} className="w-full p-4 m-4 bg-white  mx-auto flex flex-col overflow-hidden  dark:bg-black ">
       
 
       <AnimationWrapper

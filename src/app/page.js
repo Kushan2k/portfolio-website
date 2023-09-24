@@ -22,7 +22,7 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen overflow-hidden  bg-gradient-to-tr from-gray-200 via-gray-300 to-gray-200  scroll-smooth dark:bg-black ">
+    <main className="min-h-screen overflow-hidden  bg-gradient-to-tr from-gray-200 via-gray-300 to-gray-200  scroll-smooth  ">
       <NavbarDefault
         isOpen={isOpen}
         setOpen={setOpen}

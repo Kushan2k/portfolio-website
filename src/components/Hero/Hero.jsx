@@ -20,7 +20,7 @@ function Hero({ onchange }) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[ishomeVis])
   return (
-    <div id="home" ref={ref}  className="hero w-[95%] md:w-[90%] h-[90vh] grid grid-cols-1 md:grid-cols-2 items-center justify-center md:justify-center mx-auto  p-5 dark:text-white dark:bg-black">
+    <div id="home" ref={ref}  className="hero w-full h-[90vh] grid grid-cols-1 md:grid-cols-2 items-center justify-center md:justify-center mx-auto  p-5 dark:text-white dark:bg-black">
       <div className="img flex items-center rounded-full  flex-col gap-y-8 justify-center w-1/2 mx-auto h-auto ">
         <Image src={
           me
@@ -34,7 +34,7 @@ function Hero({ onchange }) {
           width={200}
           // height={170}
           style={{ borderRadius:'50%',objectFit:'fill'}}
-          className="w-full  md:w-full border-2 border-blue-700"
+          className="w-full  md:w-full border-2 border-blue-700  dark:border-gray-600"
           
         />
         <div className="social w-3/4 mx-auto flex items-center justify-around">
@@ -42,7 +42,7 @@ function Hero({ onchange }) {
             <FaLinkedin size={30} color="#0e76a8"/>
           </a>
           <a href="https://github.com/Kushan2k" target="_blank">
-            <FaGithub size={30} color='#171515' />
+            <FaGithub size={30} color='#171515' className="dark:bg-white dark:rounded-full" />
           </a>
           <a href="https://api.whatsapp.com/send?phone=+94712720033" target="_blank">
             <FaWhatsapp size={30} color="#25D366" />
@@ -56,7 +56,7 @@ function Hero({ onchange }) {
 
       <div className="info  w-4/5 flex items-center flex-col justify-center mx-auto text-right  md:mx-0">
 
-        <h2 className="text-[2.5em] font-mono font-extrabold  capitalize text-transparent bg-clip-text bg-gradient-to-tr from-blue-900 via-blue-500 to-blue-900 dark:text-white">
+        <h2 className="text-[2em] font-mono font-extrabold  capitalize text-transparent bg-clip-text bg-gradient-to-tr from-blue-900 via-blue-500 to-blue-900 dark:text-white md:text-[2em] lg:text-[2.5em]">
           kushan gayantha
           
         </h2>

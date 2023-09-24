@@ -51,7 +51,7 @@ export default function Portfolio({ onchange }) {
   
  
   return (
-    <div id="portfolio"  ref={ref} className="m-4 p-4 bg-white w-[95%] mx-auto md:w-[90%]">
+    <div id="portfolio"  ref={ref} className="m-4 p-4 bg-white  mx-auto w-full dark:bg-black">
       <Heading title={'Portfolio'} />
       <p className="mx-4 ">
         Since the start i have completed more project for learning and also for the clients that i have using verious technology stacks as they require.

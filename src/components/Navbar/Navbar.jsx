@@ -28,36 +28,36 @@ function NavbarDefault({isOpen,setOpen,ref,activeLink}) {
   }, [isOpen])
   
   return (
-    <div ref={ref} className="navbar h-16 flex md:flex-col items-center justify-end w-rounded-r-full z-50 pb-5 md:pb-0">
+    <div ref={ref} className="navbar h-16 flex md:flex-col items-center justify-end w-rounded-r-full z-50 pb-5 md:pb-0 dark:bg-black">
       
-      <Navbar fluid className='w-full fixed h-16 hidden bg-gray-100 md:flex md:justify-between md:items-center ' >
+      <Navbar fluid className='w-full z-50 fixed h-16 hidden bg-gray-100 md:flex md:justify-between md:items-center dark:bg-black' >
         
         
         <Navbar.Collapse >
           <Navbar.Link
             // active={activeLink=='home'?true:false}
-            href="#"
-            className={activeLink=='home'?'text-blue-700 scale-110 text-xl':'text-xl'}
+            href="#home"
+            className={activeLink=='home'?'text-blue-700 scale-110 dark:text-white text-xl':'text-xl'}
             
           >
             
               Home
             
           </Navbar.Link>
-          <Navbar.Link href="#about" className={activeLink=='about'?'text-blue-700 scale-110 text-xl':'text-xl'}  >
+          <Navbar.Link href="#about" className={activeLink=='about'?'text-blue-700 scale-110 text-xl dark:text-white':'text-xl'}  >
             About
           </Navbar.Link>
-          <Navbar.Link href="#resume" className={activeLink=='resume'?'text-blue-700 scale-110 text-xl':'text-xl'}  >
+          <Navbar.Link href="#resume" className={activeLink=='resume'?'text-blue-700 scale-110 text-xl dark:text-white':'text-xl'}  >
             Resume
           </Navbar.Link>
           
-          <Navbar.Link href="#portfolio" className={activeLink=='portfolio'?'text-blue-700 scale-110 text-xl':'text-xl'}>
+          <Navbar.Link href="#portfolio" className={activeLink=='portfolio'?'text-blue-700 scale-110 text-xl dark:text-white':'text-xl'}>
             Portfolio
           </Navbar.Link>
-          <Navbar.Link href="#services" className={activeLink=='services'?'text-blue-700 scale-110 text-xl':'text-xl'}>
+          <Navbar.Link href="#services" className={activeLink=='services'?'text-blue-700 scale-110 text-xl dark:text-white':'text-xl'}>
             Services
           </Navbar.Link>
-          <Navbar.Link href="#contacts" className={activeLink=='contacts'?'text-blue-700 scale-110 text-xl':'text-xl'}>
+          <Navbar.Link href="#contacts" className={activeLink=='contacts'?'text-blue-700 scale-110 text-xl dark:text-white':'text-xl'}>
             Contacts
           </Navbar.Link>
         </Navbar.Collapse>
@@ -75,7 +75,7 @@ function NavbarDefault({isOpen,setOpen,ref,activeLink}) {
         
       </button>
 
-      <motion.div className="pop-up-nav fixed bottom-0 left-0 right-0 mx-auto  w-[90%] rounded-tr-lg rounded-tl-lg bg-blue z-50  flex items-center h-[50vh] md:hidden bg-white shadow-2xl"
+      <motion.div className="pop-up-nav fixed bottom-0 left-0 right-0 mx-auto  w-[90%] rounded-tr-lg rounded-tl-lg bg-blue z-50  flex items-center h-[50vh] md:hidden bg-white shadow-2xl dark:bg-gray-700"
       
         variants={{
           start: {
