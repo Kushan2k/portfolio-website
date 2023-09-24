@@ -24,7 +24,7 @@ export const Contact = ({onchange}) => {
 
     const text=`Hello I'm ${e.target.name}. \nEmail:${e.target.email} \nMessage:${e.target.message}`
     // e.preventDefault()
-    window.location.href=`https://api.whatsapp.com/send?phone=+94712720033&text=${text}`
+    window.location=`https://api.whatsapp.com/send?phone=+94712720033&text=${text}`
   }
   return (
     <div id="contacts" ref={ref} className="m-4 p-4 bg-white  mx-auto w-full  dark:bg-black">
