@@ -27,6 +27,16 @@ import flask from '../../../public/images/icons/flask.png'
 import solidity from '../../../public/images/icons/solidity.png'
 import hh from '../../../public/images/icons/hardhat.png'
 
+import xd from '../../../public/images/icons/adobe-xd.png'
+import postman from '../../../public/images/icons/postman.png'
+import nodejs from '../../../public/images/icons/node-js.png'
+import firebase from '../../../public/images/icons/firebase.png'
+import tf from '../../../public/images/icons/tensor-flow.png'
+import redux from '../../../public/images/icons/redux.png'
+import android from '../../../public/images/icons/android.png'
+import arduino from '../../../public/images/icons/arduino.png'
+import bs from '../../../public/images/icons/bootstrap.png'
+
 
 
 
@@ -147,7 +157,15 @@ export default function TechStack() {
           <Image src={next} className="dark:bg-gray-200 dark:rounded-full dark:px-2" width={50} height={50} alt="next"/>
           <Image src={eth} className="dark:bg-blue-300 dark:rounded-full" width={50} height={50} alt="eth"/>
           <Image src={solidity} className="dark:bg-gray-200 dark:rounded-full" width={50} height={50} alt="sol"/>
-          <Image src={hh} width={50} height={50} alt="hh"/>
+          <Image src={hh} width={50} height={50} alt="hh" />
+          <Image src={xd} width={50} height={50} alt="hh"/>
+          <Image src={postman} width={50} height={50} alt="hh"/>
+          <Image src={nodejs} width={50} height={50} alt="hh"/>
+          <Image src={firebase} width={50} height={50} alt="hh"/>
+          <Image src={redux} width={50} height={50} alt="hh"/>
+          <Image src={android} width={50} height={50} alt="hh"/>
+          <Image src={arduino} width={50} height={50} alt="hh"/>
+          <Image src={bs} width={50} height={50} alt="hh"/>
           
           
 
