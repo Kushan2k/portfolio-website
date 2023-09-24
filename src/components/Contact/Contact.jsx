@@ -25,7 +25,7 @@ export const Contact = ({onchange}) => {
     e.preventDefault()
     console.log(window)
 
-    const text=`Hello I'm ${e.target.name}. \nEmail:${e.target.email} \nMessage:${e.target.message}`
+    const text=`Hello I'm ${e.target.name.value}. \nEmail:${e.target.email.value} \nMessage:${e.target.message.value}`
     // e.preventDefault()
     window.location=`https://api.whatsapp.com/send?phone=+94712720033&text=${text}`
   }
