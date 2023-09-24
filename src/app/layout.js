@@ -6,6 +6,20 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Kushan Gayantha",
   description: "portfolio website for me",
+  keywords: [
+    "nextjs",
+    "javascript",
+    "tailwind",
+    "flowbite-react",
+    "javascript",
+    "html",
+    "css",
+    "portfolio",
+  ],
+  creator: "Kushan Gayantha",
+  authors: {
+    name: "Kushan gayantha",
+  },
 }
 
 export default function RootLayout({ children }) {
