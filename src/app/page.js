@@ -2,13 +2,12 @@
 import {
   About,
   Hero,
-  NumberFacts,
   NavbarDefault,
-  TechStack,
   Portfolio,
   Service,
   Resume,
   Contact,
+  Footer,
 } from "@/components"
 
 import { useState } from "react"
@@ -37,6 +36,7 @@ export default function Home() {
       <Portfolio onchange={onChange} />
       <Service onchange={onChange} />
       <Contact onchange={onChange} />
+      <Footer />
     </main>
   )
 }

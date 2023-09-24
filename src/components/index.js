@@ -9,6 +9,7 @@ import Portfolio from "./Portfolio/Portfolio"
 import Service from "./Service/Service"
 import Resume from "./Resume/Resume"
 import { Contact } from "./Contact/Contact"
+import Footer from "./Footer/Footer"
 
 export {
   NavbarDefault,
@@ -21,5 +22,6 @@ export {
   Service,
   Resume,
   Contact,
+  Footer,
 }
 export default AnimationWrapper
