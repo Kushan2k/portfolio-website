@@ -168,7 +168,6 @@ export default function TechStack() {
           <Image src={bs} width={50} height={50} alt="hh"/>
           
           
-
         </div>
       </div>
     </div>
