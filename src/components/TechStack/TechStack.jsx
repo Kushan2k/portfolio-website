@@ -5,7 +5,7 @@ import java from '../../../public/images/icons/java.png'
 import css from '../../../public/images/icons/css3.png'
 import html from '../../../public/images/icons/html.png'
 import kotlin from '../../../public/images/icons/kotlin.png'
-import c3 from '../../../public/images/icons/c#.png'
+
 import dj from '../../../public/images/icons/djngo.png'
 import dart from '../../../public/images/icons/dart.png'
 import git from '../../../public/images/icons/git.png'
@@ -153,7 +153,7 @@ export default function TechStack() {
           <Image src={github} className="dark:bg-gray-200 dark:rounded-full" width={50} height={50} alt="gith"/>
           <Image src={flask} className="dark:bg-gray-200 dark:rounded-full" width={50} height={50} alt="flask"/>
           <Image src={mysql} width={50} height={50} alt="mysql"/>
-          {/* <Image src={c3} width={50} height={50} alt="c#"/> */}
+          
           <Image src={next} className="dark:bg-gray-200 dark:rounded-full dark:px-2" width={50} height={50} alt="next"/>
           <Image src={eth} className="dark:bg-blue-300 dark:rounded-full" width={50} height={50} alt="eth"/>
           <Image src={solidity} className="dark:bg-gray-200 dark:rounded-full" width={50} height={50} alt="sol"/>
@@ -166,6 +166,7 @@ export default function TechStack() {
           <Image src={android} width={50} height={50} alt="hh"/>
           <Image src={arduino} width={50} height={50} alt="hh"/>
           <Image src={bs} width={50} height={50} alt="hh"/>
+          <Image src={tf} width={50} height={50} alt="hh"/>
           
           
         </div>
