@@ -6,6 +6,9 @@ import me from '../../../public/images/me.jpg'
 import { useInView } from "framer-motion"
 import { useEffect, useRef } from "react"
 
+import me3 from '../../../public/images/m1.jpg'
+import me4 from '../../../public/images/m2.jpg'
+
 //placeholder url
 // 'https://previews.123rf.com/images/apoev/apoev2107/apoev210700033/171405527-default-avatar-photo-placeholder-gray-profile-picture-icon-business-man-illustration.jpg'
 
@@ -34,7 +37,7 @@ function Hero({ onchange }) {
           width={200}
           // height={170}
           style={{ borderRadius:'50%',objectFit:'fill'}}
-          className="w-full  md:w-full border-2 border-blue-700  dark:border-gray-600"
+          className="w-full  md:w-full border-2 border-blue-700  dark:border-white"
           
         />
         <div className="social w-3/4 mx-auto flex items-center justify-around">
@@ -62,7 +65,7 @@ function Hero({ onchange }) {
         </h2>
         <p className="text-right font-semibold">Full Stack Developer</p>
         
-        <a className=" mt-3 rounded-full p-3  bg-gradient-to-tr from-blue-600 to-blue-900  text-white hover:from-blue-900 hover:to-blue-600  transition-transform hover:scale-105 cursor-pointer">
+        <a href="/kushan_gayantha.pdf" download={true} className=" mt-3 rounded-full p-3  bg-gradient-to-tr from-blue-600 to-blue-900  text-white hover:from-blue-900 hover:to-blue-600  transition-transform hover:scale-105 cursor-pointer">
           Download CV
         </a>
 

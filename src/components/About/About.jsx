@@ -7,6 +7,8 @@ import { useEffect, useRef } from 'react'
 import { useInView } from 'framer-motion'
 
 
+
+
 export default function About({onchange}) {
 
   const ref = useRef(null)
@@ -79,7 +81,7 @@ export default function About({onchange}) {
             //placeholder img
             // 'https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg'
           src={me2}
-
+          
           width={200}
           height={200}
           loading="lazy"
