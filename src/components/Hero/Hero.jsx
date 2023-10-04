@@ -6,11 +6,8 @@ import me from '../../../public/images/me.jpg'
 import { useInView } from "framer-motion"
 import { useEffect, useRef } from "react"
 
-import me3 from '../../../public/images/m1.jpg'
-import me4 from '../../../public/images/m2.jpg'
 
-//placeholder url
-// 'https://previews.123rf.com/images/apoev/apoev2107/apoev210700033/171405527-default-avatar-photo-placeholder-gray-profile-picture-icon-business-man-illustration.jpg'
+
 
 function Hero({ onchange }) {
   const ref=useRef(null)
