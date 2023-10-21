@@ -1,5 +1,26 @@
 export const data = [
   {
+    id: Math.random(),
+    type: "mobile application",
+    title: "Yummy Recipe finder",
+    description: `
+      recpie finding android mobile application using react native with expo in javascript.
+      redux state managemnt,user can save recpies for offline use. in development for more personalized recpie filtering. 
+      `,
+    cover: "https://drive.google.com/uc?id=1_g6PxUxHVCrR-R-ff566IBDqXqw7ID4o",
+    url: "https://github.com/Kushan2k/yummy-food-recipe-mobile-app",
+    tags: ["javascript", "react native", "redux", "react-redux", "expo"],
+    images: [
+      "https://drive.google.com/uc?id=1BuBRQCCUuBZXwcdIKID-BkpunRd0E8bO",
+      "https://drive.google.com/uc?id=1_g6PxUxHVCrR-R-ff566IBDqXqw7ID4o",
+      "https://drive.google.com/uc?id=1g5prBr9_rRIP5Zz7ulwovFcbi-4L1GTr",
+      "https://drive.google.com/uc?id=1BKBfmAw4pVeKVuT0vu9k0q8mOEjJn-Ny",
+      "https://drive.google.com/uc?id=13bIY7C3a5DizhWQb3Qcer1ZDbm3KnII0",
+
+      "https://drive.google.com/uc?id=1l8K4cbv62dzRCGgmlXHwodl9xd4kAc_2",
+    ],
+  },
+  {
     id: 1,
     type: "web development",
     title: "Foodsfly food ordering online web app",
